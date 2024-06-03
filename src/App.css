@@ -1,0 +1,29 @@
+.container {
+  width: 90%;
+  max-width: 500px;
+  height: 50px;
+  position: absolute;
+  top: 10%; /* Move container to the top */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid black;
+}
+
+.full-height-bg {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(180deg, #130745 50%, #3b2f80 100%);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    max-width: none;
+  }
+}
